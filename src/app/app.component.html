@@ -1,8 +1,5 @@
-<h1>Markdown from File</h1>
-<markdown src="assets/example.md"></markdown>
+<a href="#" (click)="showMarkdown = true; $event.preventDefault()">Click here to see documentation</a>
 
-<!-- <h1>Markdown from Inline Text</h1>
-<markdown>
-  ## Welcome!
-  This is **bold**, and this is *italic*.
-</markdown> -->
+<div *ngIf="showMarkdown">
+  <markdown src="assets/example.md"></markdown>
+</div>
