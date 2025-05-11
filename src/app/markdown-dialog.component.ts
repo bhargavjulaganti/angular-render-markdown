@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, MatDialogModule, MarkdownModule],
   template: `
-    <h2 mat-dialog-title>Documentation</h2>
     <mat-dialog-content>
       <markdown [src]="data.src"></markdown>
     </mat-dialog-content>
