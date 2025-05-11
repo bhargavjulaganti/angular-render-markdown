@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MarkdownModule } from 'ngx-markdown';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone: true,
+  imports: [MarkdownModule],
+ template: `
+    <markdown src="assets/example.md"></markdown>
+  `
 })
-export class AppComponent {
-  title = 'my-markdown-app';
-}
+export class AppComponent {}
